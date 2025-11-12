@@ -1,0 +1,43 @@
+.modal
+    position: fixed
+    inset: 0
+    background: rgba(0,0,0,0.4)
+    +flex(center, center)
+    z-index: 1000
+    .box
+        width: 500px
+        padding: 4em
+        background: #fff
+        border-radius: $radius-m
+        +flex(center, center, column)
+        gap: $gap-s
+        position: relative
+        .icon
+            background: transparent
+            font-size: $font-size-l
+            cursor: pointer
+            position: absolute
+            right: 5%
+            top: 5%
+        .center
+            width: 100%
+            +flex(ccenter, stetch, column)
+            gap: $gap-s
+            .item
+                width: 100%
+                +flex(center, start, column)
+                gap: $gap-xxs
+                .target_amount
+                    font-size: $font-size-xs
+                    font-weight: 600
+                .target
+                    width: 100%
+                    border-radius: $radius-s
+                    border: 1px solid $color-grey-4
+                    padding: 15px
+    .save
+        padding: 10px 50px
+        border-radius: $radius-s
+        background: $color-primary
+        font-size: $font-size-s
+        color: #fff

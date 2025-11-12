@@ -1,0 +1,158 @@
+.Expenses
+    width: 100%
+    .expenses
+        width: 100%
+        padding: 1em
+        +flex(center, start, column)
+        gap: $gap-s
+        .title
+            font-size: $font-size-s
+            color: $color-grey-3
+            font-weight: 400
+        .box
+            width: 100%
+            background: #fff
+            border-radius: $radius-m
+            padding: 1.5em
+            filter: drop-shadow(0 20px 25px $color-grey-5)
+            .top
+                +flex(space-between, center)
+                .comparison
+                    font-size: $font-size-xs
+                    font-weight: 600
+                .indicator
+                    +flex(space-between, center)
+                    gap: $gap-m
+                    .item
+                        +flex(space-between, center)
+                        gap: 8px
+                        .square_prime
+                            width: 16px
+                            height: 8px
+                            background: $color-primary
+                            border-radius: 2px
+                        .square_gray
+                            width: 16px
+                            height: 8px
+                            background: $color-grey-5
+                            border-radius: 2px
+                        .item_span
+                            font-size: $font-size-xxs
+                            font-weight: 500
+                            color: $color-grey-2
+            .chart
+                position: relative
+                display: grid
+                grid-template-columns: 3em 1fr
+                grid-template-rows: 1fr auto
+                gap: $gap-xs
+                height: 300px
+                .checkpoints
+                    position: relative
+                    .item
+                        position: absolute
+                        right: 0
+                        font-size: $font-size-xs
+                        font-weight: 400
+                        color: $color-grey-3
+                        text-align: right
+                        translate: 0 50%
+                        @for $i from 1 through 5
+                            &:nth-child(#{$i})
+                                bottom: calc( #{$i} * (100% / 5) - (100% / 5))
+                .values
+                    background: linear-gradient(
+                        0deg,
+                        $color-grey-5 1px,
+                        transparent 1px
+                    ) 
+                    background-size: 100% 20%
+                    display: grid
+                    grid-template-columns: repeat(12, 1fr)
+                    .item
+                        height: 100%
+                        display: grid
+                        +flex(center, end)
+
+                        gap: 10px
+                        .this
+                            width: 20px
+                            height: 70%
+                            background: $color-primary
+                            border-radius: $radius-s $radius-s 0 0
+                        .last
+                            width: 20px
+                            height: 70%
+                            background: $color-grey-5
+                            border-radius: $radius-s $radius-s 0 0
+                .text
+                    grid-column: 2 / 3
+                    font-size: $font-size-xs
+                    font-weight: 400
+                    color: $color-grey-3
+                    display: grid
+                    grid-template-columns: repeat(12, 1fr)
+                    text-align: center
+    .expenses_breakdown
+        width: 100%
+        padding: 1em
+        +flex(center, start, column)
+        gap: $gap-s
+        .title
+            font-size: $font-size-s
+            color: $color-grey-3
+            font-weight: 400
+        .box
+            width: 100%
+            +grid-cols(3)
+            +grid-rows(2)
+            gap: $gap-m
+            filter: drop-shadow(0 20px 25px $color-grey-5)
+            .square
+                width: 100%
+                border-radius: $radius-m
+                overflow: hidden
+                .top
+                    width: 100%
+                    +flex(space-between, center)
+                    background: #fff
+                    padding: 1em
+                    .left
+                        width: 50%
+                        +flex(start, center)
+                        gap: $gap-xxs
+                        .icon
+                            padding: 10px
+                            font-size: $font-size-xxl
+                            color: $color-grey-3
+                            background: $color-grey-5
+                            border-radius: $radius-m
+                            border-radius: $radius-m
+                        .info
+                            +flex(center, start, column)
+                            .name
+                                font-size: $font-size-xs
+                                font-weight: 500
+                                color: $color-grey-3
+                            .price
+                                font-size: $font-size-xs
+                                font-weight: 700
+                    .right
+                        width: 50%
+                        +flex(center, end, column)
+                        gap: 4px
+                        .number
+                            +flex(center, center)
+                            gap: 4px
+                            .percent
+                                font-size: $font-size-xs
+                                font-weight: 500
+                                color: $color-grey-3
+                            .arrow_down
+                                color: $color-danger
+                            .arrow_up
+                                color: $color-success
+                        .info
+                            font-size: $font-size-xxs
+                            font-weight: 400
+                            color: $color-grey-3

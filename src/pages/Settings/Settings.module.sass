@@ -1,0 +1,88 @@
+.settings
+    width: 100%
+    .main
+        padding: 1em
+        width: 100%
+        gap: $gap-s
+    .box
+        +flex(start, start)
+        width: 100%
+        gap: $gap-xl
+        background: #fff
+        border-radius: $radius-m
+        padding: 1.5em
+        filter: drop-shadow(0 20px 25px $color-grey-5)
+        .left
+            width: 50%
+            +flex(center, start, column)
+            gap: $gap-l
+            .settings_button 
+                +flex(space-between, center)
+                gap: $gap-xl
+                button
+                    font-weight: 600
+                    font-size: $font-size-s
+                    background: transparent
+                    color: $color-grey-3
+                .active
+                    font-size: $font-size-s
+                    padding: 7px
+                    color: $color-primary
+                    border-bottom: 2.5px solid $color-primary
+                    background: transparent
+            .settings_account
+                width: 100%
+                +flex(center, start, column)
+                gap: $gap-xl
+                .item
+                    +flex(center, start, column)
+                    gap: $gap-s
+                    .name
+                        margin-left: 20px
+                        font-size: $font-size-xs
+                        color: $color-grey-3
+                    label
+                        font-weight: 600
+                        font-size: $font-size-xs
+                        color: $color-grey-2
+            .settings_update
+                width: 30%
+                button
+                    width: 100%
+                    padding: $gap-xs
+                    +flex(center, center)
+                    background: $color-primary
+                    border-radius: $radius-s
+                    color: #fff
+                    font-weight: 600
+                    &:hover
+                        background: $color-hover
+                    &:active
+                        background: $color-active
+        .right
+            width: 50%
+            +flex(center, center, column)
+            padding: 3em
+            gap: $gap-xs
+            .picture_span
+                font-size: $font-size-xs
+                font-weight: 600
+                color: $color-grey-2
+                margin-top: 40px
+            .icon
+                width: 35%
+                +flex(center, center, column)
+                gap: $gap-xxs
+                padding: $gap-m
+                border: 2px dashed $color-grey-3
+                border-radius: $radius-m
+                text-align: center
+                cursor: pointer
+                .icon_upload
+                    font-size: $font-size-l
+                    color: $color-grey-3
+                    font-weight: 700
+                .icon_text
+                    font-size: $font-size-xs
+                    color: $color-grey-3
+                    font-weight: 500

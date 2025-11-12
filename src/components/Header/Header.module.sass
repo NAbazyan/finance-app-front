@@ -1,0 +1,73 @@
+.header
+    width: 100%
+    padding: 1em
+    border: 1px solid $color-grey-5
+    position: sticky
+    top: 0
+    +flex(space-between, center)
+    grid-area: h
+    background: $color-bg-light
+    .left
+        +flex(space-between, center)
+        gap: $gap-m
+        .heading
+            font-family: $family-main
+            font-size: $font-size-m
+            font-weight: 700
+        .time
+            +flex(space-between, center)
+            gap: 6px
+            font-size: $font-size-xxs
+            color: $color-grey-4
+            font-weight: 400
+    .right
+        +flex(space-between, center)
+        gap: $gap-xl
+        .bell
+            +flex(space-between, center)
+            font-size: $font-size-s
+            color: $color-grey-3
+            position: relative
+            cursor: pointer
+            transition: $transition
+            &:hover
+                color: $color-grey-2
+                transition: $transition
+            .bell_cycle
+                width: 10px
+                height: 10px
+                background: $color-primary
+                border-radius: 50%
+                position: absolute
+                top: -2px
+                right: -2px
+                border: 2px solid $color-bg-light
+        .langbar
+            position: relative
+            cursor: pointer
+            .selected
+                height: 2em
+                img
+                    height: 100%
+            .lang_list
+                position: absolute
+                top: 100%
+                left: 0
+                .option
+                    height: 2em
+        .label
+            position: relative
+            .input
+                padding: $gap-xxs $gap-m
+                border-radius: 12px
+                font-weight: 400
+                font-size: $font-size-xs
+                color: $color-grey-3
+            .search
+                position: absolute
+                top: 50%
+                right: $gap-s
+                translate: 0 -50%
+                font-size: $font-size-s
+                color: $color-grey-2
+                cursor: pointer

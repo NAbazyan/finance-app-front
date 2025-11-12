@@ -1,0 +1,13 @@
+=flex($jc:start, $ai:start, $fd:row)
+    display: flex
+    justify-content: $jc
+    align-items: $ai 
+    flex-direction: $fd
+
+=grid-cols($col:1)
+    display: grid
+    grid-template-columns: repeat($col, 1fr)
+    
+=grid-rows($row:1)
+    display: grid
+    grid-template-rows: repeat($row, 1fr)

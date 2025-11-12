@@ -1,0 +1,11 @@
+{
+    "accounts": [
+        {
+            "id": "f45d",
+            "bank_name": "Novel",
+            "accoount_number": "123456789123",
+            "total_amount": 25000
+
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+.label
+    +flex(start, start, column)
+    width: 100%
+    gap: $gap-xxs
+    position: relative
+    .name
+        width: 100%
+        +flex(space-between, center)
+        .reset
+            font-size: $font-size-xxs
+            color: $color-primary
+    .group
+        width: 100%
+        position: relative
+        .input
+            width: 100%
+            padding: $gap-xxs $gap-xs
+            font-size: $font-size-xs
+            border-radius: $radius-s
+            border: 1px solid $color-grey-3
+        .eye
+            position: absolute
+            right: $gap-s
+            top: 50%
+            translate: 0 -50%
+            font-size: $font-size-m
+            line-height: 1
+            color: $color-grey-2
+
+    .error
+        color: $color-danger

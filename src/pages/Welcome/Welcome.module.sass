@@ -1,0 +1,40 @@
+.main
+    .wrap
+        +flex(center, center, column)
+        text-align: center
+        width: 80%
+        max-width: 920px
+        margin: auto
+        height: 100vh
+        gap: 4rem
+        .header
+            +flex(center, center, column)
+            gap: 2rem
+            .subtitle
+                font-size: $font-size-xl
+            .main_heading
+                font-size: $font-size-xl
+                font-weight: 600
+            .main_description
+                color: $color-grey-3
+                width: 80%
+                line-height: 1.5
+        .separator
+            width: 200px
+            border-top: 2px solid $color-grey-3
+        .footer
+            +flex(center, center, column)
+            gap: 2rem
+            .footer_description
+                font-size: $font-size-l
+                font-weight: 400
+                line-height: 1.5
+                color: $color-grey-2
+                strong
+                    font-weight: 600
+            .footer_link
+                font-size: $font-size-m
+                padding: 0.75em 2em
+                background: $color-primary
+                color: #fff
+                border-radius: $radius-full

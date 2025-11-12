@@ -1,0 +1,27 @@
+.main
+    width: 100%
+    height: 100vh
+    +flex(center, center, column)
+    .wrap
+        width: 100%
+        height: 100vh
+        +flex(center, center, column)
+        gap: $gap-xxl
+        .inputs
+            width: 90%
+            max-width: 500px
+            +flex(center, start, column)
+            gap: $gap-l
+            .signed
+                +flex(center, center)
+                gap: 1em
+                &_input
+                    width: 20px
+                    height: 20px
+                .label
+                    font-size: $font-size-xs
+            .signup
+                color: $color-primary
+                font-size: $font-size-xs
+                display: block
+                align-self: center

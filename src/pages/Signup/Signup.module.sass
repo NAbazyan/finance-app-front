@@ -1,0 +1,21 @@
+.main
+    width: 100%
+    height: 100vh
+    +flex(center, center, column)
+    .wrap
+        width: 100%
+        height: 100vh
+        +flex(center, center, column)
+        gap: $gap-s
+        .title
+            font-size: $font-size-s
+        .inputs
+            width: 90%
+            max-width: 500px
+            +flex(center, start, column)
+            gap: $gap-l
+            .info
+                color: $color-grey-3
+                .info1
+                    color: $color-primary
+                    cursor: pointer

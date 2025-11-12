@@ -1,0 +1,123 @@
+.accounts
+    width: 100%
+    +flex(center, center, column)
+    .details
+        width: 100%
+        padding: 1em
+        +flex(center, start, column)
+        gap: $gap-s
+        .title
+            font-size: $font-size-s
+            color: $color-grey-3
+            font-weight: 400
+        .box
+            width: 100%
+            background: #fff
+            border-radius: $radius-m
+            padding: 1.5em
+            filter: drop-shadow(0 20px 25px $color-grey-5)
+            .info
+                width: 100%
+                height: 10em
+                +grid-cols(3)
+                +grid-rows(2)
+                .label
+                    width: 100%
+                    +flex(start, start, column)
+                    gap: 4px
+                    .info1
+                        font-size: $font-size-xs
+                        color: $color-grey-4
+                        font-weight: 400
+                    .info2
+                        font-size: $font-size-s
+                        font-weight: 600
+            .buttons
+                width: 100%
+                height: 5em
+                +flex(start, center)
+                gap: $gap-m
+                .edit
+                    padding: $gap-xs $gap-xxl
+                    background: $color-primary
+                    color: #fff
+                    font-weight: 700
+                    font-size: $font-size-xs
+                    border-radius: $radius-s
+                .remove
+                    background: transparent
+                    font-size: $font-size-xs
+    .transaction_history
+        width: 100%
+        padding: 1em
+        +flex(center, start, column)
+        gap: $gap-s
+        .title
+            font-size: $font-size-s
+            color: $color-grey-3
+            font-weight: 400
+        .box
+            width: 100%
+            background: #fff
+            border-radius: $radius-m
+            padding: 1.5em
+            filter: drop-shadow(0 20px 25px $color-grey-5)
+            +flex(center, space-between, column)
+            .top
+                +flex(space-between, center)
+                gap: $gap-m
+                .info
+                    font-size: $font-size-xs
+                    font-weight: 600
+                .left
+                    +flex(start, center)
+                    width: 10%
+                .middle
+                    +flex(space-between, center)
+                    width: 35%
+                .right
+                    +flex(space-between, center)
+                    width: 25%
+            hr
+                border: 1px solid $color-grey-5
+                margin-top: 20px
+            .bottom
+                +flex(space-between, center)
+                gap: $gap-m
+                margin-top: 20px
+                .left
+                    +flex(start, center)
+                    width: 10%
+                    gap: $gap-xs
+                    .item
+                        font-size: $font-size-xs
+                        font-weight: 600
+                .middle
+                    +flex(space-between, center)
+                    width: 32%
+                    text-align: center
+                    margin-right: 30px
+                    .info
+                        font-size: $font-size-xs
+                        font-weight: 400
+                        color: $color-grey-2
+                .right
+                    +flex(space-between, center)
+                    width: 27%
+                    .info
+                        color: $color-grey-2
+                    .amount
+                        font-size: $font-size-xs
+                        font-weight: 600
+            .button
+                width: 100%
+                +flex(center, center)
+                margin-top: 50px
+                .load
+                    width: 20%
+                    padding: $gap-xxs $gap-m
+                    background: $color-primary
+                    color: #fff
+                    font-size: $font-size-xs
+                    font-weight: 600
+                    border-radius: $radius-s

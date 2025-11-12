@@ -1,0 +1,120 @@
+.bills
+    width: 100%
+    padding: 1em
+    +flex(space-between, start, column)
+    gap: $gap-s
+    .top
+        width: 100%
+        +flex(space-between, center)
+        .title
+            font-size: $font-size-s
+            color: $color-grey-3
+            font-weight: 400
+        .add
+            padding: 1px 20px
+            border-radius: $radius-m
+            border: 1px solid $color-grey-4
+            background: #fff
+            font-size: $font-size-s
+            font-weight: 400
+            cursor: pointer
+    .box
+        width: 100%
+        background: #fff
+        border-radius: $radius-m
+        padding: 1.5em
+        filter: drop-shadow(0 20px 25px $color-grey-5)
+        .top
+            +flex(space-between, center)
+            gap: $gap-m
+            .left
+                width: 15%
+                +flex(space-between, center)
+                gap: $gap-xxl
+                font-size: $font-size-xs
+                font-weight: 600
+                margin-left: 15px
+            .middle
+                +flex(space-between, center)
+                width: 62%
+                font-size: $font-size-xs
+                font-weight: 600
+                .item_des
+                    margin-left: 60px
+                .last_chagre
+                    margin-right: 65px
+            .right
+                +flex(center, center)
+                font-size: $font-size-xs
+                font-weight: 600
+                margin-right: 20px
+        hr
+            border: 1px solid $color-grey-5
+            margin-top: 10px
+        .bottom
+            +flex(space-between, center)
+            gap: $gap-m
+            margin-top: 10px
+            padding: 1em
+            .left
+                +flex(space-between, center)
+                gap: $gap-xxl
+                .date
+                    +flex(center, center, column)
+                    padding: $gap-xxl $gap-m
+                    border-radius: $radius-m
+                    background: $color-grey-5
+                    transform: translateX(-5%)
+                    .may
+                        width: 80%
+                        +flex(center, center, column)
+                        text-align: center
+                        font-size: $font-size-xs
+                        font-weight: 700
+                        color: $color-grey-2
+                        gap: 4px
+                .logo
+                    +flex(center, center)
+                    width: 100px
+                    height: 100px
+                    .figma_img
+                        width: 100%
+                        transform: translateX(-15%)
+            .middle
+                +flex(space-between, center)
+                width: 55%
+                .des
+                    width: 50%
+                    margin-left: 30px
+                    .des_name
+                        font-size: $font-size-s
+                        font-weight: 600
+                    .description
+                        font-size: $font-size-xxs
+                        font-weight: 400
+                        color: $color-grey-4
+                .last_charge
+                    color: $color-grey-4
+                    font-size: $font-size-xs
+                    transform: translateX(10%)
+            .right
+                +flex(center, center)
+                .money
+                    padding: 12px 20px
+                    font-size: $font-size-xs
+                    font-weight: 700
+                    background: #fff
+                    border-radius: $radius-m
+                    border: 1px solid $color-grey-5
+                    transform: translateX(70%)
+            .delete_icon
+                +flex(center, center)
+                width: 30px
+                height: 30px
+                border-radius: $radius-m
+                border: 1px solid $color-grey-4
+                background: #fff
+                font-size: $font-size-s
+                font-weight: 400
+                cursor: pointer
+                transform: translateX(50%) translateY(-200%)
